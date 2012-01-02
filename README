@@ -1,0 +1,7 @@
+The Notihub application include both a server and a client application. The initial thought on notihub is to create a notification aggregation center. The design of notihub is loosely coupled service based. Notihub server application uses OSGI. 
+
+The first phase of Notihub is to implement a deal notification feature, i.e., user could subscribe to a merchantise and set a price threshold. When the threshold is met, a notification is sent to the user. 
+
+Notihub client currently is an Android based application. 
+
+Notihub is under active development. 

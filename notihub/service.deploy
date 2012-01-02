@@ -1,0 +1,3 @@
+cp ./app_services/common/target/common.jar ~/glassfish3/glassfish/domains/domain1/autodeploy/bundles/
+cp ./app_services/merchantise_stock_tracker_service_ejb/target/merchantise_stock_tracker_service_ejb.jar ~/glassfish3/glassfish/domains/domain1/autodeploy/bundles/
+

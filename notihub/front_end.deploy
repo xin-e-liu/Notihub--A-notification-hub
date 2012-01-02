@@ -1,0 +1,1 @@
+cp ./front_end/merchantise_stock_tracker_servlet/target/merchantise_stock_tracker_servlet.war ~/glassfish3/glassfish/domains/domain1/autodeploy/bundles/

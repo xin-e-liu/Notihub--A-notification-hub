@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-EJB: ALL
+Built-By: xiliu3
+Tool: Bnd-1.15.0
+Bundle-Name: queue_dispatcher_mdb
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_22
+Bundle-Version: 0.1.0.SNAPSHOT
+Bnd-LastModified: 1319651985646
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.notihub.infrastructure.queue_dispatcher_mdb.impl
+ .QueueDispatcherServiceActivator
+Import-Package: com.notihub.app_services.common;version="[0.1,1)",com.
+ notihub.infrastructure.queue_dispatcher_mdb.impl,javax.ejb,javax.jms,
+ org.apache.log4j,org.osgi.framework;version="[1.5,2)",org.osgi.util.t
+ racker;version="[1.4,2)"
+Bundle-SymbolicName: com.notihub.infrastructure.queue_dispatcher_mdb
+

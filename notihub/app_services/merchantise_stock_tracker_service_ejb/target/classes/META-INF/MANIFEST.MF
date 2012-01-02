@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Export-EJB: ALL
+Built-By: xiliu3
+Build-Jdk: 1.6.0_22
+Bundle-Version: 0.1.0.SNAPSHOT
+Tool: Bnd-1.15.0
+Bundle-Name: merchantise_stock_tracker_service_ejb EJB
+Bnd-LastModified: 1319651984691
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.notihub.app_services.merchantise_stock_tracke
+ r_service_ejb
+Import-Package: com.notihub.app_services.common;version="[0.1,1)",java
+ x.ejb,javax.xml.bind,javax.xml.namespace,javax.xml.xpath,org.apache.l
+ og4j,org.w3c.dom
+

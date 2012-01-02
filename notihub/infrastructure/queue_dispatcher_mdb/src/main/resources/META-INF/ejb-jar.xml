@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ejb-jar xmlns = "http://java.sun.com/xml/ns/javaee"
+         version = "3.1"
+         xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation = "http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd">
+    <display-name>Ejb1</display-name>
+    <enterprise-beans>
+        <message-driven>
+            <display-name>QueueDispatcherMDB</display-name>
+            <ejb-name>QueueDispatcherMDB</ejb-name>
+            <ejb-class>notihub.apps.queue_dispatcher_mdb.impl.QueueDispatcherMDB</ejb-class>
+            <messaging-type>javax.jms.MessageListener</messaging-type>
+            <transaction-type>Container</transaction-type>
+            <activation-config>
+                <activation-config-property>
+                    <activation-config-property-name>DestinationType</activation-config-property-name>
+                    <activation-config-property-value>javax.jms.Queue</activation-config-property-value>
+                </activation-config-property>
+                <activation-config-property>
+                    <activation-config-property-name>Destination</activation-config-property-name>
+                    <activation-config-property-value>amqmsg</activation-config-property-value>
+                </activation-config-property>
+            </activation-config>
+        </message-driven>
+    </enterprise-beans>
+    <assembly-descriptor>
+        <container-transaction>
+            <method>
+                <ejb-name>QueueDispatcherMDB</ejb-name>
+                <method-name>onMessage</method-name>
+                <method-params>
+                    <method-param>java.lang.String</method-param>
+                </method-params>
+            </method>
+            <trans-attribute>Required</trans-attribute>
+        </container-transaction>
+    </assembly-descriptor>
+</ejb-jar>

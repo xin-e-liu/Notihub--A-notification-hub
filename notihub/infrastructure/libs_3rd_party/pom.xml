@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.notihub.infrastructure</groupId>
+  <artifactId>libs_3rd_party</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+
+  <name>libs_3rd_party Maven bundle</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.14</version>
+      <type>jar</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.w3c</groupId>
+      <artifactId>dom</artifactId>
+      <version>2.3.0-jaxb-1.0.6</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.xml</groupId>
+      <artifactId>jaxp-api</artifactId>
+      <version>1.4.2</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <version>2.5.1</version>
+        <configuration>
+          <goalPrefix>libs_3rd_party</goalPrefix>
+        </configuration>
+        <executions>
+          <execution>
+            <id>generated-helpmojo</id>
+            <goals>
+              <goal>helpmojo</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>2.3.4</version>
+        <configuration>
+          <instructions>
+            <Bundle-Name>libs_3rd_party</Bundle-Name>
+            <Bundle-SymbolicName>libs_3rd_party</Bundle-SymbolicName>
+            <Bundle-Description>Third party libraries</Bundle-Description>
+            <Import-Package>!*</Import-Package>
+            <Private-Package>*</Private-Package>
+            <Embed-Dependency>log4j,org.w3c,javax.xml</Embed-Dependency>
+            <_exportcontents>*</_exportcontents>
+          </instructions>
+        </configuration>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

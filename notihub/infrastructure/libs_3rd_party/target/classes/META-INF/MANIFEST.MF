@@ -1,0 +1,87 @@
+Manifest-Version: 1.0
+Export-Package: org.apache.log4j;uses:="org.apache.log4j.spi,org.apach
+ e.log4j.helpers,org.apache.log4j.or,org.apache.log4j.config",org.w3c.
+ dom.css;uses:="org.w3c.dom,org.w3c.dom.stylesheets,org.w3c.dom.views"
+ ,org.apache.maven.plugin.logging,org.apache.log4j.lf5.config,org.apac
+ he.log4j.spi;uses:="org.apache.log4j,org.apache.log4j.helpers,org.apa
+ che.log4j.or",org.apache.log4j.nt;uses:="org.apache.log4j.helpers,org
+ .apache.log4j,org.apache.log4j.spi",org.w3c.dom.ranges;uses:="org.w3c
+ .dom",javax.xml.namespace,org.xml.sax,javax.xml.stream;uses:="javax.x
+ ml.stream.events,javax.xml.namespace,javax.xml.stream.util,javax.xml.
+ transform",org.w3c.dom.views,org.xml.sax.ext;uses:="org.xml.sax,org.x
+ ml.sax.helpers",org.apache.log4j.xml;uses:="javax.xml.parsers,org.w3c
+ .dom,org.xml.sax,org.apache.log4j.config,org.apache.log4j,org.apache.
+ log4j.helpers,org.apache.log4j.spi,org.apache.log4j.or",org.apache.lo
+ g4j.chainsaw;uses:="org.apache.log4j,org.apache.log4j.spi,javax.xml.p
+ arsers,org.xml.sax,org.xml.sax.helpers",javax.xml.transform.sax;uses:
+ ="org.xml.sax.ext,javax.xml.transform,org.xml.sax,javax.xml.transform
+ .stream",org.w3c.dom.xpath;uses:="org.w3c.dom",javax.xml.transform.st
+ ax;uses:="javax.xml.stream,javax.xml.transform,javax.xml.stream.event
+ s",javax.xml.parsers;uses:="javax.xml.validation,org.w3c.dom,org.xml.
+ sax,org.xml.sax.helpers",org.apache.log4j.lf5.viewer.categoryexplorer
+ ;uses:="org.apache.log4j.lf5",org.w3c.dom,org.w3c.dom.bootstrap;uses:
+ ="org.w3c.dom",javax.xml.datatype;uses:="javax.xml.namespace",javax.x
+ ml.xpath;uses:="org.xml.sax,javax.xml.namespace",org.apache.log4j.or;
+ uses:="org.apache.log4j.helpers,org.apache.log4j.spi,org.apache.log4j
+ ",javax.xml.transform.stream;uses:="javax.xml.transform",javax.xml.va
+ lidation;uses:="org.w3c.dom.ls,javax.xml.transform,javax.xml.transfor
+ m.stream,org.xml.sax,org.w3c.dom",org.xml.sax.helpers;uses:="org.xml.
+ sax",org.apache.log4j.net;uses:="org.apache.log4j,org.apache.log4j.sp
+ i,org.apache.log4j.helpers,org.apache.log4j.xml",org.apache.log4j.lf5
+ .util;uses:="org.apache.log4j.lf5,org.apache.log4j.lf5.viewer",org.ap
+ ache.log4j.lf5.viewer;uses:="org.apache.log4j.lf5,org.apache.log4j.lf
+ 5.viewer.categoryexplorer,org.apache.log4j.lf5.util,org.apache.log4j.
+ lf5.viewer.configure",org.apache.log4j.jdbc;uses:="org.apache.log4j,o
+ rg.apache.log4j.spi",org.apache.log4j.jmx;uses:="org.apache.log4j,org
+ .apache.log4j.helpers,org.apache.log4j.spi",org.apache.log4j.config;u
+ ses:="org.apache.log4j.helpers,org.apache.log4j,org.apache.log4j.spi"
+ ,org.apache.log4j.helpers;uses:="org.apache.log4j,org.apache.log4j.sp
+ i",org.apache.log4j.or.jms;uses:="org.apache.log4j.helpers,org.apache
+ .log4j.or",javax.xml.transform.dom;uses:="javax.xml.transform,org.w3c
+ .dom",org.w3c.dom.traversal;uses:="org.w3c.dom",org.w3c.dom.styleshee
+ ts;uses:="org.w3c.dom",org.apache.log4j.lf5;uses:="org.apache.log4j.l
+ f5.viewer,org.apache.log4j,org.apache.log4j.spi",org.w3c.dom.ls;uses:
+ ="org.w3c.dom,org.w3c.dom.events,org.w3c.dom.traversal",org.apache.lo
+ g4j.lf5.viewer.images,org.w3c.dom.events;uses:="org.w3c.dom,org.w3c.d
+ om.views",org.apache.log4j.or.sax;uses:="org.apache.log4j.or,org.xml.
+ sax",javax.xml,javax.xml.stream.events;uses:="javax.xml.namespace,jav
+ ax.xml.stream",javax.xml.stream.util;uses:="javax.xml.stream,javax.xm
+ l.stream.events,javax.xml.namespace",javax.xml.transform,org.apache.l
+ og4j.varia;uses:="org.apache.log4j.spi,org.apache.log4j,org.apache.lo
+ g4j.helpers",org.apache.maven.plugin;uses:="org.apache.maven.plugin.l
+ ogging",org.apache.log4j.lf5.viewer.configure;uses:="org.apache.log4j
+ .lf5.viewer,org.apache.log4j.lf5,javax.xml.parsers,org.apache.log4j.l
+ f5.viewer.categoryexplorer,org.w3c.dom",org.w3c.dom.html;uses:="org.w
+ 3c.dom"
+Ignore-Package: com.sun.jdmk.comm,javax.swing.text,javax.swing.tree,ja
+ vax.jms,java.util,java.net,javax.mail.internet,javax.management,javax
+ .swing,java.math,java.io,java.util.regex,javax.swing.event,java.awt.e
+ vent,java.lang,java.awt,javax.swing.border,javax.naming,java.text,jav
+ a.security,java.lang.reflect,javax.swing.table,javax.mail,java.sql,ja
+ va.beans
+Implementation-Title: maven-plugin-api
+Bundle-ClassPath: .,log4j-1.2.14.jar
+Built-By: xiliu3
+Tool: Bnd-1.15.0
+Implementation-Vendor: Apache Software Foundation
+Specification-Title: Maven is a project development management and com
+ prehension tool. Based on the concept of a project object model: buil
+ ds, dependency management, documentation creation, site publication, 
+ and distribution publication are all controlled from the declarative 
+ file. Maven can be extended by plugins to utilise a number of other d
+ evelopment tools for reporting or the build process.
+Bundle-SymbolicName: libs_3rd_party
+Extension-Name: maven-plugin-api
+Implementation-Version: 2.0
+Specification-Vendor: Apache Software Foundation
+Bundle-Name: libs_3rd_party
+Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 0.1.0.SNAPSHOT
+Build-Jdk: 1.6.0_22
+Bnd-LastModified: 1319651981554
+Bundle-ManifestVersion: 2
+Bundle-Description: Third party libraries
+Embed-Dependency: log4j,org.w3c,javax.xml
+Originally-Created-By: Apache Maven Bundle Plugin
+Archiver-Version: Plexus Archiver
+

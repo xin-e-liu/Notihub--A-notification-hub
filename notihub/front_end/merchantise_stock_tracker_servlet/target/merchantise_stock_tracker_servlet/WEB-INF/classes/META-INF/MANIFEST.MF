@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Built-By: xiliu3
+Build-Jdk: 1.6.0_22
+Bundle-Version: 0.1.0.SNAPSHOT
+Tool: Bnd-1.15.0
+Bundle-Name: merchantise_stock_tracker_servlet
+Bnd-LastModified: 1319651986920
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.notihub.front_end.merchantise_stock_tracker_s
+ ervlet
+Web-ContextPath: /mst
+Import-Package: com.notihub.app_services.common;version="[0.1,1)",java
+ x.inject,javax.servlet,javax.servlet.annotation,javax.servlet.http,or
+ g.apache.log4j,org.glassfish.osgicdi;version="[1.0,2)"
+

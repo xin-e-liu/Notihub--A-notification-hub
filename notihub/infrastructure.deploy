@@ -1,0 +1,2 @@
+cp ./infrastructure/libs_3rd_party/target/libs_3rd_party-0.1-SNAPSHOT.jar ~/glassfish3/glassfish/domains/domain1/autodeploy/bundles/
+

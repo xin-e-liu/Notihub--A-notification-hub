@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Export-Package: com.notihub.app_services.common;uses:="org.apache.log4
+ j,org.osgi.framework,javax.xml.bind.annotation,javax.xml.xpath,javax.
+ xml.parsers,org.w3c.dom,javax.xml.namespace,org.xml.sax";version="0.1
+ .0.SNAPSHOT"
+Class-Path: 
+Built-By: xiliu3
+Tool: Bnd-1.15.0
+Bundle-Name: notihub Common APIs module
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_22
+Bundle-Version: 0.1.0.SNAPSHOT
+Bnd-LastModified: 1319367454235
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.notihub.app_services.common.CommonInitialization
+Import-Package: javax.xml.bind.annotation,javax.xml.namespace,javax.xm
+ l.parsers,javax.xml.xpath,org.apache.log4j,org.osgi.framework;version
+ ="[1.5,2)",org.w3c.dom,org.xml.sax
+Bundle-SymbolicName: com.notihub.common
+
